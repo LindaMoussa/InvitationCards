@@ -1,0 +1,445 @@
+<html>
+    <head>
+        
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/index-style.css"/>  
+        <link rel="stylesheet" href="css/all.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">      
+
+        <title>Invitation Cards</title>
+    </head>
+   
+    <body>
+        
+        <nav class="navbar navbar-expand-lg bg-white pb-0 border-bottom mb-2">
+          <a class="navbar-brand w-50" href="#"><img class="img-fluid w-25" src="images/logo.png" alt="invitation cards logo"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto text-dark">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="editor.html">Editor</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="contact%20us.html">Contact</a>
+              </li>
+              <li class="nav-item logOut">
+                <a class="nav-link disabled py-0" href="#">Log Out</a>
+              </li>
+                <li class="nav-item border-left ml-3">
+                <a class="nav-link disabled" href="#"><i class="fab fa-facebook-f pt-1"></i></a>
+              </li>
+                <li class="nav-item">
+                <a class="nav-link disabled" href="#"><i class="fab fa-twitter pt-1"></i></a>
+              </li>
+                <li class="nav-item">
+                <a class="nav-link disabled" href="#"><i class="fab fa-google-plus-g pt-1"></i></a>
+              </li>
+                <li class="nav-item">
+                <a class="nav-link disabled" href="#"><i class="fab fa-youtube pt-1"></i></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        
+        <section class="editor">
+            <div class="container-fluid px-0">
+                <div class="row">
+                    <div class="col-3 mt-5">
+                        <div class="menues">
+                            <div class="row">
+                                <div class="menueList col-4">
+                                    <ul class="menueOptions list-unstyled pt-3">
+                                        <li id="cardSizeBtn" class="text-center py-2"><i class="fa fa-columns fa-lg text-white"></i><p class="text-white mb-0 pt-1">  Card Sizes  </p></li>
+                                        <li id="bgColorBtn" class="text-center py-2"><i class="fas fa-palette text-white fa-lg"></i><p class="text-white mb-0 pt-1"> Bg Colors </p></li>
+                                        <li class="text-center py-2"><i class="fas fa-image text-white fa-lg"></i><p class="text-white mb-0 pt-1">  Bg Options  </p></li>
+                                        <li id="clipBtn" class="text-center py-2"><i class="fa fa-cubes text-white fa-lg"></i><p class="text-white mb-0 pt-1">  Clip Arts  </p></li>
+                                        <li class="text-center py-2"><i class="fa fa-font text-white fa-lg"></i><p class="text-white mb-0 pt-1"> Text </p></li>
+                                        <li class="text-center py-2"><i class="fa fa-upload text-white fa-lg"></i><p class="text-white mb-0 pt-1"> Upload </p></li>
+                                        
+                                    </ul>
+                                </div>
+                                <div class="col-7 optionList">
+                                    <div class="cardSizeArea">
+                                    <h5 class="text-white py-3">Card Sizes:(inches)</h5>
+                                    <div class="row">
+                                        <div id="size48" class="col-6 my-2 px-1">
+                                            <img class="img-fluid" src="images/zzz.png">
+                                        </div>
+                                        <div id="size57" class="col-6 my-2 px-1"><img class="img-fluid" src="images/vvv.png"></div>
+                                        <div id="size69" class="col-6 my-2 px-1"><img class="img-fluid" src="images/xxx.png"></div>
+                                        <div id="size554" class="col-6 my-2 px-1"><img class="img-fluid" src="images/www.png"></div>
+                                        </div>
+                                    </div>
+                                    <div class="bgColorArea">
+                                        <h5 class="text-white py-3">Background Color</h5>
+                                        <div class="row ml-2">
+                                            <div class="col-2 my-2 mx-1 rounded-circle red"></div>
+                                            <div class="col-2 my-2 mx-1 rounded-circle yellow"></div>
+                                            <div class="col-2 my-2 mx-1 rounded-circle green"></div>
+                                            <div class="col-2 my-2 mx-1 rounded-circle white"></div>
+                                            <div class="col-2 my-2 mx-1 rounded-circle purple"></div>
+                                            <div class="col-2 my-2 mx-1 rounded-circle blue"></div>
+                                            <div class="col-2 my-2 mx-1 rounded-circle black"></div> 
+                                            <div class="col-2 my-2 mx-1 rounded-circle pink"></div> 
+                                            <div class="col-2 my-2 mx-1 rounded-circle orange"></div> 
+                                            <div class="col-2 my-2 mx-1 rounded-circle brown"></div>
+                                            <div class="col-2 my-2 mx-1 rounded-circle grey"></div>
+                                            <div class="col-2 my-2 mx-1 rounded-circle lightblue"></div>
+                                                <br>   
+                                        </div>
+                                          
+                                        <div class="input-group mb-3">
+                                          <h6 class="my-2  text-white">Custom color : </h6>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <input type="color" class="form-control px-2 colorPicker rounded" name="favcolor" value="#ea0647">
+                                                        <br><br>
+
+                                                    </div>
+                                                </div>
+                                            </div>   
+                                        </div>         
+                                    </div>
+                                    
+                                    <div class="bgOptionsArea">
+                                    <div class="row">
+                                        <div class="col-12 my-2 text-center">
+                                            <button type="button" id="clearBackground" class="btn btn-warning my-3 rounded px-3 py-2">Clear Background</button>
+                                            <h6 class="text-white my-1">Transparency:</h6>
+                                            <input class="form-control transparentRange pt-0" type="range" min="0" max="1" value="0.5" step="0.1">
+                                            <h6 class="text-white my-2 mb-3" >Gradient:</h6>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <span class="text-white">Color1:</span>
+                                                        <input type="color" class="form-control g1ColorPicker rounded" name="favcolor" value="#ea0647">
+
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <span class="text-white">Color2:</span>
+                                                        <input type="color" class="form-control g2ColorPicker rounded" name="favcolor" value="#ea0647">
+                                                    </div>
+                                                    <div class="row mt-3 text-left ">
+                                                        <div class="col-6 pl-4 ">
+                                                            <div class="form-check">
+                                                                  <input class="form-check-input " type="radio" name="exampleRadios" id="Radio1" value="option1">
+                                                                <label class="form-check-label text-white pl-2" for="exampleCheck1">Top</label>
+                                                            </div>
+                                                        </div> 
+                                                        <div class="col-6 p-0">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="exampleRadios" id="Radio2" value="option2">
+                                                                <label class="form-check-label text-white pl-2" for="exampleCheck1">Bottom</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                 
+                                                </div>
+                                            </div> 
+                                            <button type="button" id="applyGrad" class="btn btn-warning my-3 rounded px-4 py-2">Apply Gradient</button>
+                                            
+                                        </div>
+                                        
+                                        </div></div>
+                                    
+                                    <div class="clipArea">
+                                
+                                        <div class="row m-auto">
+                                             <div class="form-group mt-4">
+                                                <select class="form-control pr-5 clipArtsSelector" id="exampleFormControlSelect1">
+                                                  <option id="weddingOption" value="wedding">Wedding</option>
+                                                  <option value="party">Party</option>
+                                                  <option value="birthday">Birthday</option>
+                                                  <option value="mother">Mother's Day</option>
+                                                  <option value="watercolor">Water Color</option>
+                                                  <option value="floral">Floral</option>
+                                                  <option value="boarders">Boarders</option>
+                                                
+                                                </select>
+
+                                            </div>
+                                            <div class="weddingArts">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <img class="img-fluid" src="images/clipArts/Asset%201.png"> 
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <img class="img-fluid" src="images/clipArts/Asset%202.png">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <img class="img-fluid" src="images/clipArts/Asset%203.png">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <img class="img-fluid" src="images/clipArts/Asset%204.png">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <img class="img-fluid" src="images/clipArts/vAsset%201.png">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <img class="img-fluid" src="images/clipArts/vAsset%202.png">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <img class="img-fluid" src="images/clipArts/vAsset%204.png">
+                                                    </div> 
+                                                    <div class="col-6">
+                                                        <img class="img-fluid" src="images/clipArts/vAsset%206.png">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <img class="img-fluid" src="images/clipArts/vAsset%203.png">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <img class="img-fluid" src="images/clipArts/vAsset%205.png">
+                                                    </div>
+                                                    
+                                                </div>
+                                        </div>
+                                            <div class="birthdayArts">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <img class="img-fluid" src="images/clipArts/5Asset%201.png"> 
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <img class="img-fluid" src="images/clipArts/5Asset%202.png">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <img class="img-fluid" src="images/clipArts/5Asset%203.png">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <img class="img-fluid" src="images/clipArts/3Asset%201.png">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <img class="img-fluid" src="images/clipArts/3Asset%2013.png">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <img class="img-fluid" src="images/clipArts/3Asset%2012.png">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <img class="img-fluid" src="images/clipArts/3Asset%203.png">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <img class="img-fluid" src="images/clipArts/3Asset%202.png">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <img class="img-fluid" src="images/clipArts/3Asset%205.png">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <img class="img-fluid" src="images/clipArts/3Asset%207.png">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <img class="img-fluid" src="images/clipArts/pAsset%201.png">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <img class="img-fluid" src="images/clipArts/pAsset%202.png">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <img class="img-fluid" src="images/clipArts/pAsset%203.png">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <img class="img-fluid" src="images/clipArts/pAsset%204.png">
+                                                    </div>
+                                                    
+                                                </div>
+                                        </div> 
+                                            <div class="motherArts">
+                                                <div class="row">
+                                                    <div class="col-6 py-2">
+                                                        <img class="img-fluid" src="images/clipArts/mAsset%201.png"> 
+                                                    </div>
+                                                    <div class="col-6 py-2">
+                                                        <img class="img-fluid" src="images/clipArts/mAsset%202.png">
+                                                    </div>
+                                                    <div class="col-6 py-2">
+                                                        <img class="img-fluid" src="images/clipArts/mAsset%203.png">
+                                                    </div>
+                                                    <div class="col-6 py-2">
+                                                        <img class="img-fluid" src="images/clipArts/mAsset%204.png">
+                                                    </div>
+                                                    <div class="col-6 py-2">
+                                                        <img class="img-fluid" src="images/clipArts/mmAsset%201.png">
+                                                    </div>
+                                                    <div class="col-6 py-2">
+                                                        <img class="img-fluid" src="images/clipArts/mmAsset%202.png">
+                                                    </div>
+                                                    <div class="col-6 py-2">
+                                                        <img class="img-fluid" src="images/clipArts/mmAsset%203.png">
+                                                    </div>
+                                                </div>
+                                        </div>  
+                                            <div class="partyArts">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <img class="img-fluid" src="images/clipArts/5Asset%201.png"> 
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <img class="img-fluid" src="images/clipArts/3Asset%2011.png">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <img class="img-fluid" src="images/clipArts/5Asset%203.png">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <img class="img-fluid" src="images/clipArts/5Asset%202.png">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <img class="img-fluid" src="images/clipArts/3Asset%2010.png">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <img class="img-fluid" src="images/clipArts/4Asset%209.png">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <img class="img-fluid" src="images/clipArts/3Asset%208.png">
+                                                    </div>
+                                                </div>
+                                        </div> 
+                                            <div class="floralArts">
+                                                <div class="row">
+                                                    
+                                                    <div class="col-6">
+                                                        <img class="img-fluid" src="images/clipArts/frmAsset%202-8.png">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <img class="img-fluid" src="images/clipArts/flowerAsset%205-8.png">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <img class="img-fluid" src="images/clipArts/flowerAsset%206-8.png">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <img class="img-fluid" src="images/clipArts/flowerAsset%207-8.png">
+                                                    </div>
+                                                  
+                                                </div>
+                                        </div> 
+                                            <div class="boardersArts">
+                                                <div class="row">
+                                                    
+                                                    <div class="col-6 py-2">
+                                                        <img class="img-fluid" src="images/clipArts/frameAsset%201-8.png">
+                                                    </div>
+                                                    <div class="col-6 py-2">
+                                                        <img class="img-fluid" src="images/clipArts/frAsset%202-8.png">
+                                                    </div>
+                                                    <div class="col-6 py-2">
+                                                        <img class="img-fluid" src="images/clipArts/frAsset%203-8.png">
+                                                    </div>
+                                                    <div class="col-6 py-2">
+                                                        <img class="img-fluid" src="images/clipArts/frAsset%204-8.png">
+                                                    </div>
+                                                    <div class="col-6 py-2">
+                                                        <img class="img-fluid" src="images/clipArts/frmAsset%201-8.png">
+                                                    </div>
+                                                    <div class="col-6 py-2">
+                                                        <img class="img-fluid" src="images/clipArts/frmAsset%203-8.png">
+                                                    </div>
+                                                  
+                                                </div>
+                                        </div> 
+                                            
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    <div class="textArea">
+                                    <h5 class="text-white py-3">Card Sizes:(inches)</h5>
+                                    <div class="row">
+                                        <div class="col-3 my-2 px-1"><img class="img-fluid" src="images/bg-image-28.jpg"></div>
+                                        <div class="col-3 my-2 px-1"><img class="img-fluid" src="images/bg-image-29.jpg"></div>
+                                        <div class="col-3 my-2 px-1"><img class="img-fluid" src="images/bg-image-28.jpg"></div>
+                                        <div class="col-3 my-2 px-1"><img class="img-fluid" src="images/bg-image-29.jpg"></div>
+                                        </div></div>
+                                    
+                                    <div class="uploadArea">
+                                    <h5 class="text-white py-3">Card Sizes:(inches)</h5>
+                                    <div class="row">
+                                      <form>
+                                          <div class="form-group">
+                                            <label for="exampleFormControlFile1" class="text-white">Upload an Image</label>
+                                            <input type="file" class="form-control-file rounded" id="imgLoader">
+                                          </div>
+                                        </form>
+                                        </div></div>
+                                
+                                </div>
+                            </div>
+                        
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <div class="row"> 
+                            <div class="col-12 py-3 ml-5 pl-5">
+                                <i class="fas fa-undo-alt editIcons"></i><span class="pl-1 pr-3">Undo</span>
+                                <i class="fas fa-redo-alt editIcons"></i><span class="pl-1 pr-3">Redo</span>
+                                <i class="fas fa-trash editIcons cleanEditor"></i><span class="pl-1 pr-3">Clean Editor</span>
+                            </div>
+                            <div class="col-12">
+<!--                                <div class="workSheet bg-light"></div>-->
+                                <canvas id="c" width="528" height="384" class="workSheet mb-4" ></canvas>
+                                
+                            </div>
+                            <div class="col-12 pt-4 mb-5">
+<!--                                <button>Preview</button>-->
+                                <button id="download" class="float-right ml-2 ">Download</button>
+                                <button class="float-right">Save</button>    
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-1 mt-5">
+                        <div class="options text-center ">
+                            <div class="row">
+                                <div class="col-12">
+                                   <a href="#" class="eraser"> <i class="fas fa-eraser text-white fa-lg my-3 "></i> </a>    
+                                </div>
+                                <div class="col-12">
+                                   <a href="#" class="copy"> <i class="far fa-copy text-white fa-lg my-3"></i></a>
+                                </div>
+                                <div class="col-12">
+                                   <a href="#" class="locked"> <i class="fas fa-lock text-white fa-lg my-3"></i></a>
+                                </div>    
+                                <div class="col-12">
+                                    <a href="#" class="unlocked"><i class="fas fa-lock-open text-white fa-lg my-3 mb-4"></i></a>
+                                </div>
+<!--
+                                <div class="col-12">
+                                    <a href="#" class="forward">
+                                        <img class="img-fluid text-white my-3 w-25" src="images/clipArts/forwardAsset%201-8.png"></a>
+                                </div>
+                                <div class="col-12">
+                                   <a href="#" class="backward"> <img class="img-fluid text-white my-3 w-25" src="images/clipArts/bring-backAsset%202-8.png"> </a>
+                                   
+                                  
+                                </div>    
+-->
+                            
+                            </div>
+                            
+                            
+                            
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <script src="js/jquery-3.3.1.min.js"></script> 
+        <script src="js/popper.min.js"></script>        
+        <script src="js/bootstrap.min.js"></script> 
+        <script src="js/index-script.js"></script>
+        <script src="js/fabric.min.js"></script>
+        <script src="js/FileSaver.min.js"></script>
+        
+    </body>
+</html>
