@@ -282,7 +282,7 @@ $('.clipArtsSelector').change(function() {
 });  
 $("option:selected").each(function(){
     
-        $('img').click(function(){
+        $('.artimg').click(function(){
             var path=this.src;
             fabric.Image.fromURL(path,function(img){
                 canvas.add(img);
