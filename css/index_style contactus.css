@@ -22,8 +22,8 @@ clear: both;
     
 }
 .nevs img{
-    width: 180px;
-    height: 100px;
+/*     width: 180px;
+    height: 100px; */
 }
 /*sec1*/
 .sec1{
@@ -32,8 +32,7 @@ clear: both;
 */
 }
 img{
-    width: 100px;
-    height: 50px;
+    width: 12% !important;
 }
 .sec1 span{
     color:#ea0647;
