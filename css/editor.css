@@ -1,7 +1,7 @@
 
 body{
     font-family: 'Lato', sans-serif;
-    letter-spacing: 1px;
+/*    letter-spacing: 1px;*/
     overflow-x: hidden;
 }
 .logOut{
@@ -11,10 +11,26 @@ body{
     right: 15px;
     
 }
+.editor{
+    margin-top: 10% !important;
+    margin-bottom: 10% !important;
+}
+
+.nevs{
+    background-color:white;
+    border-bottom: 1px solid rgba(0,0,0,.05);
+
+}
+.nevs li a{
+    color: black;
+}
+.form-inline{
+    border-left: rgba(0,0,0,0.5) 1px solid;
+}
 .navbar-nav li{
-    font-size: 1.1rem;
-    font-style: italic;
-    letter-spacing: 1.8px;
+/*    font-size: 1.1rem;*/
+/*    font-style: italic;*/
+/*    letter-spacing: 1.8px;*/
 }
 a {
     color: #ea0647;
@@ -23,7 +39,9 @@ a {
     -moz-box-shadow: 0 0 25px #999;
     -webkit-box-shadow: 0 0 25px #999;
     box-shadow: 0 0 25px #999;
-    border:1px solid #ea0647;   
+    border:1px solid #ea0647; 
+    height: 384px;
+    width: 528px;
 }
 .editIcons{
     color: #ea0647;
@@ -76,10 +94,8 @@ a {
 {
     background-color: rgba(65,0,73,1);
 }
-.workSheet{
-    height: 384px;
-    width: 528px;
-}
+
+
 .form-control.g1ColorPicker,.form-control.g2ColorPicker,.form-control.colorPicker{
     background-color: transparent !important;
     border:none !important;
@@ -123,8 +139,9 @@ a {
 .clipArea{
     display: none;
 }
-.textArea{
-    display: none;   
+.textCustArea{
+    display: none;  
+
 }
 .bgOptionsArea{
     display: none;
@@ -135,4 +152,18 @@ a {
 .bgColorArea .row div{
     width: 25px;
     height: 25px;
+}
+
+/**** text area shimaa***/
+.textCustArea button{
+    background-color: #ea0647;
+    color: #fff;
+    cursor: pointer;
+}
+.item{
+    font-size: 18px !important;
+}
+/****editTextList ****/
+#editTextList{
+   /* display:none;*/
 }

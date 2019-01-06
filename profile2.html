@@ -1,19 +1,18 @@
 <html>
-<head> 
-    <link rel="stylesheet" href="css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="css/all.css"/>
-    <link rel="stylesheet" href="css/skitter.css"/>
-    <link rel="stylesheet" href="home.css"/>
-    <link rel="stylesheet" href="css/editor.css">
-    </head>
-
-<body>
-    
-              
-    <section class="sec1 position-relative" >
+    <head>
+        
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/profile2.css"/> 
+        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="css/all.css"/>
+        <link rel="stylesheet" href="css/contactus.css">
+     </head>
+   
+     <body>
+         <section class="sec1 position-relative" >
                 <div class="navBar position-absolute" >    
-                  <nav class="navbar position-fixed navbar-expand-lg bg-white nevs py-2">
-                      <img  class="img-fluid my-5 logo " src="images/darklogo.png"  >
+                  <nav class="navbar position-fixed navbar-expand-lg nevs py-2">
+                      <a href="index.html"><img  class="img-fluid my-5 logo " src="images/darklogo.png"  ></a>
                       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                       </button>
@@ -24,7 +23,7 @@
                             <a class="nav-link" href="index.html"> <span >Home</span></a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link " href="#">Profile</a>
+                            <a class="nav-link " href="profile2.html">Profile</a>
                           </li>
                            <li class="nav-item">
                             <a class="nav-link " href="editor.html">Editor</a>
@@ -61,59 +60,79 @@
               </div>
           </div>
                 </nav></div>
-          
-    </section>
-    <section class="card">
-    
-    <div class="container">
-        
+        </section>
+         
+        <div class="container my-5 profile-sec ">
         <div class="row">
-        <div class="col-md-6">
-            
-            <div class="reg-card">
-                <h2>Register</h2>
-            <label>User Name</label>
-            <input class="form-control" type="text" placeholder="Enter User Name" />
-            
-                <div id="mail">
-                <label>E-mail Address</label>
-            <input class="form-control" type="email" placeholder="Name@example.com"/>
-                <div class=" mt-2 alert alert-danger">worng mail</div>
-                </div>
-             <label>Password</label>  
-            <input class="form-control" type="password"/>
-                <label>Re-Password</label>
-            <input class="form-control" type="password"/>
-             <button class="btn">Sign Up</button>   
-            
-            </div></div>
-            <div class="col-md-2"></div>
-            <div class="col-md-4">
-          
-            <div class="login-card">
-               <h2>Log In</h2> 
-                <label>User Name</label>
-                <input class="form-control"/>
-                <label>Passwprd</label>
-                 <input class="form-control" type="password"/>
-                <label class="form-check-label check">
-      <input class="form-check-input" type="checkbox"> Keep Me Login
-    </label>
-             <br/>   
-              <button class="btn btn-two">LogIn</button>  
-                </div>
-            
-            
-            
+            <div class="profile col-md-3 mt-5">
+                <img class="img-fluid  rounded-circle" src="images/profile/testimonial-2.jpg" alt="person">
             </div>
+            <div class="profileInfo col-md-9 pt-5 pl-5">
+                <div class="col-12  pl-5">
+                <div class="row ">
+                    <div class="col-6 "><h2 id="name">Ahmed Mohammed</h2></div>
+                    <div class="col-6  mt-2">
+                        <a  id="editOne" class=" px-3 py-2 remBtn">edit</a>
+                    </div>
+                </div>
+                </div>
+                <div class="col-12 pl-5 mt-4">
+                <div class="row">
+                    <div class="col-6"><h4 id="email">Ahmed_Mohammed@gmail.com</h4></div>
+                    <div class="col-6"><a class="py-2 px-3 remBtn">edit</a></div>
+                </div>
+                </div>
+                <div class="col-12 pl-5 my-4">
+                     <div class="row">
+                    <div class="col-6"><p id="bio">A paragraph is a self-contained unit of a discourse in writing dealing with a particular point or idea</p></div>
+                    <div class="col-6"><a class="py-2 px-3 remBtn">edit</a></div>
+                </div>
+                </div>
+             
+                <div class="col-12 pl-5">
+                <div class="row">
+                    <div class="col-6"><a class="py-2 px-3 remBtn">Change Password</a></div>
+                    <div class="col-6"><a class="py-2 px-3 remBtn">Deactivate Account</a></div>
+
+                </div>
+                </div>
+            </div>
+            </div></div>
+        <section class="container sec my-5 saved-cards">
+            <h2 class="text-center my-5">Your Saved Cards</h2>
+            <div class="row mt-5">    
+              
+                        <div class="col-md-4 my-2">
+                            <img class="img-fluid w-75" src="images/profile/ic1.jpg"/>
+                            <p class="float-left mt-3"><a class="py-2 px-3 remBtn">remove</a></p>
+                        </div>
+                        
+                        <div class="col-md-4 my-2">
+                            <img class="img-fluid w-75" src="images/profile/ic2.jpg"/>
+                            <p class="float-left mt-3"><a class="py-2 px-3 remBtn">remove</a></p>                        
+                        </div>
+                    
+                        
+                        <div class="col-md-4  my-2">
+                            <img class="img-fluid w-75" src="images/profile/ic3.jpg"/>
+                            <p class="float-leftr mt-3"><a class="py-2 px-3 remBtn">remove</a></p>                        
+                        </div>
+                       <div class="col-md-4  my-2">
+                            <img class="img-fluid w-75" src="images/profile/ic1.jpg"/>
+                            <p class="float-left mt-3"><a class="py-2 px-3 remBtn">remove</a></p> </div>
+                        
+                        <div class="col-md-4 my-2">
+                            <img class="img-fluid w-75" src="images/profile/ic2.jpg"/>
+                            <p class="float-left mt-3"><a class="py-2 px-3 remBtn">remove</a></p></div>
+                    
+                        
+                        <div class="col-md-4 my-2">
+                            <img class="img-fluid w-75" src="images/profile/ic3.jpg"/>
+                            <p class="float-left mt-3"><a class="py-2 px-3 remBtn">remove</a></p></div>
+            </div>
+        </section>
+
         
-        
-        </div>
-        
-        
-        </div>
-    </section>
-    
          <footer class="mt-5">
                     <div class="container">
                         <div class="row ">
@@ -148,13 +167,6 @@
                     </div>
 
                 </footer>
-    
-    
-    
-   <script src="js/jquery-3.3.1.min.js"></script> 
-    <script src="js/popper.min.js"></script>        
-    <script src="js/bootstrap.min.js"></script> 
-     <script src="js/jquery.skitter.js"></script>
-<!--    <script src="js/scroll.js"></script> -->
     </body>
+    <script src="js/profile2.js"></script>
 </html>

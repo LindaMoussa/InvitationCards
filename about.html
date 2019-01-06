@@ -1,19 +1,19 @@
 <html>
-<head> 
-    <link rel="stylesheet" href="css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="css/all.css"/>
-    <link rel="stylesheet" href="css/skitter.css"/>
-    <link rel="stylesheet" href="home.css"/>
-    <link rel="stylesheet" href="css/editor.css">
-    </head>
 
-<body>
-    
-              
-    <section class="sec1 position-relative" >
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/all.css"/>
+        <link rel="stylesheet" href="home.css"/>       
+        <link rel="stylesheet" href="css/about.css"/>
+        <link rel="stylesheet" href="css/editor.css"/>
+        
+
+    </head>
+    <body>
+         <section class="sec1 position-relative mb-5" >
                 <div class="navBar position-absolute" >    
-                  <nav class="navbar position-fixed navbar-expand-lg bg-white nevs py-2">
-                      <img  class="img-fluid my-5 logo " src="images/darklogo.png"  >
+                  <nav class="navbar position-fixed navbar-expand-lg nevs py-2">
+                      <a href="index.html"><img  class="img-fluid my-5 logo " src="images/darklogo.png"  ></a>
                       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                       </button>
@@ -24,7 +24,7 @@
                             <a class="nav-link" href="index.html"> <span >Home</span></a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link " href="#">Profile</a>
+                            <a class="nav-link " href="profile2.html">Profile</a>
                           </li>
                            <li class="nav-item">
                             <a class="nav-link " href="editor.html">Editor</a>
@@ -36,7 +36,7 @@
                             <a class="nav-link " href="contact.html">Contact</a>
                           </li>
                             <li class="nav-item">
-                            <a class="nav-link " href="login.html">Login/signUp</a>
+                            <a class="nav-link " href="login.html">Log-in/Sign-up</a>
                           </li>
                             
                         </ul>
@@ -61,60 +61,17 @@
               </div>
           </div>
                 </nav></div>
-          
-    </section>
-    <section class="card">
-    
-    <div class="container">
+                </section>
         
-        <div class="row">
-        <div class="col-md-6">
-            
-            <div class="reg-card">
-                <h2>Register</h2>
-            <label>User Name</label>
-            <input class="form-control" type="text" placeholder="Enter User Name" />
-            
-                <div id="mail">
-                <label>E-mail Address</label>
-            <input class="form-control" type="email" placeholder="Name@example.com"/>
-                <div class=" mt-2 alert alert-danger">worng mail</div>
-                </div>
-             <label>Password</label>  
-            <input class="form-control" type="password"/>
-                <label>Re-Password</label>
-            <input class="form-control" type="password"/>
-             <button class="btn">Sign Up</button>   
-            
-            </div></div>
-            <div class="col-md-2"></div>
-            <div class="col-md-4">
-          
-            <div class="login-card">
-               <h2>Log In</h2> 
-                <label>User Name</label>
-                <input class="form-control"/>
-                <label>Passwprd</label>
-                 <input class="form-control" type="password"/>
-                <label class="form-check-label check">
-      <input class="form-check-input" type="checkbox"> Keep Me Login
-    </label>
-             <br/>   
-              <button class="btn btn-two">LogIn</button>  
-                </div>
-            
-            
+        
+        <div id="about" class="text-center">
+        <h2 class="text-center my-5">About Us</h2>
+        <img class="img-fluid img1" src="images/profile/invitation_card.jpg"/>
+            <p class="para px-5 mt-5">Celebrate life’s joys with Invitation Cards. Let us make your event special.</p>
             
             </div>
         
-        
-        </div>
-        
-        
-        </div>
-    </section>
-    
-         <footer class="mt-5">
+          <footer class="mt-5">
                     <div class="container">
                         <div class="row ">
                             <div class="col-md-4 mb-4 mt-5">
@@ -148,13 +105,7 @@
                     </div>
 
                 </footer>
-    
-    
-    
-   <script src="js/jquery-3.3.1.min.js"></script> 
-    <script src="js/popper.min.js"></script>        
-    <script src="js/bootstrap.min.js"></script> 
-     <script src="js/jquery.skitter.js"></script>
-<!--    <script src="js/scroll.js"></script> -->
+        <script src="js/jquery-3.3.1.js"></script>
+        <script src="js/about.js"></script>
     </body>
 </html>

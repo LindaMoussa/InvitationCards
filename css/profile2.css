@@ -1,0 +1,50 @@
+
+body{
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1px;
+    overflow-x: hidden;
+}
+.logOut{
+    border:1px solid #ea0647;
+    position: absolute;
+    top:5px;
+    right: 15px;
+    
+}
+.profile-sec{
+    margin-top: 8% !important;
+    margin-bottom: 8% !important;
+}
+.navbar-nav li{
+/*
+    font-size: 1.1rem;
+    font-style: italic;
+    letter-spacing: 1.8px;
+*/
+}
+.saved-cards h2{
+    color: #ea0647;
+    font-weight: 500;
+    font-size: 36px;
+}
+.saved-cards{
+    margin-bottom: 8%!important;
+}
+a {
+    color: #ea0647;
+    cursor: pointer;
+
+}
+.row h4{
+    color: black;
+}
+.remBtn{
+    color:gray!important;
+/*    border:1px solid #ccc !important;*/
+        
+}
+.remBtn:hover{
+    color:#ea0647 !important;
+    border:1px solid #ea0647 !important;
+
+}

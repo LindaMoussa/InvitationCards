@@ -18,37 +18,27 @@ clear: both;
     position: fixed;
     top: 0px;
     left: 0px;
+   border-bottom: 1px solid rgba(0,0,0,.05);
+}
+.nevs li a{
+    color: black;
+}
+.form-inline{
+    border-left: rgba(0,0,0,0.5) 1px solid;
+}
 
-    
-}
-.nevs img{
-/*     width: 180px;
-    height: 100px; */
-}
-/*sec1*/
-.sec1{
-/*
-   
-*/
-}
-img{
-    width: 12% !important;
-}
 .sec1 span{
     color:#ea0647;
 }
-/*
-.sec1 a:hover{
-    color: deeppink;
-}
-*/
-.contact{
-    
-    height: 80%;
+
+.contact{  
+/*    height: 80%;*/
     width: 50%;
     color: #ea0647;
-/*    border: solid 1px darkgray;*/
     padding: 40px;
+}
+.contact h2{
+    font-weight: 500;
 }
 ::placeholder { 
   text-shadow: 10px ;
@@ -56,7 +46,7 @@ img{
   
 }
 .contact{
-       margin-top: 200px;
+    margin-top: 150px;
     margin-left: 275px;
 }
 .contact button{
