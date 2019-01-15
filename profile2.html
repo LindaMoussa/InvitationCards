@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="home.css">
         <link rel="stylesheet" href="css/all.css"/>
         <link rel="stylesheet" href="css/contactus.css">
+        <link rel="stylesheet" href="css/editor.css">
      </head>
    
      <body>
@@ -34,9 +35,11 @@
                              <li class="nav-item">
                             <a class="nav-link " href="contact.html">Contact</a>
                           </li>
+<!--
                             <li class="nav-item">
                             <a class="nav-link " href="login.html">Login/signUp</a>
                           </li>
+-->
                             
                         </ul>
 
@@ -49,12 +52,12 @@
                 <a class="nav-link" href="#"><i class="fab fa-twitter "></i></a>
               </li>
                <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fab fa-google-plus"></i></a>
+                <a class="nav-link" href="#"><i class="fab fa-google-plus-g"></i></a>
               </li>
                  <li class="nav-item">
                 <a class="nav-link" href="#"><i class="fab fa-instagram "></i></a>
             </ul>
-              <button class="btn btn-outline-secondary   m-5 my-sm-0" type="submit">Log Out</button>
+              <button id="logBtn"class="btn btn-outline-secondary   m-5 my-sm-0" type="submit">Sign Up</button>
 
 
               </div>
@@ -100,8 +103,9 @@
             </div></div>
         <section class="container sec my-5 saved-cards">
             <h2 class="text-center my-5">Your Saved Cards</h2>
-            <div class="row mt-5">    
+            <div class="row mt-5" id="savedCardsRow">    
               
+<!--
                         <div class="col-md-4 my-2">
                             <img class="img-fluid w-75" src="images/profile/ic1.jpg"/>
                             <p class="float-left mt-3"><a class="py-2 px-3 remBtn">remove</a></p>
@@ -129,6 +133,7 @@
                         <div class="col-md-4 my-2">
                             <img class="img-fluid w-75" src="images/profile/ic3.jpg"/>
                             <p class="float-left mt-3"><a class="py-2 px-3 remBtn">remove</a></p></div>
+-->
             </div>
         </section>
 
@@ -167,6 +172,63 @@
                     </div>
 
                 </footer>
-    </body>
-    <script src="js/profile2.js"></script>
+                <!--          popup      -->
+       <div class="container-fluid lightbox-container ">
+        
+            <div class="row ">
+            
+            
+                <div class="col-md-4 lightbox-holder mx-auto align-items-start">
+                
+                
+                    <div class="lightbox-item bg-light mx-auto rounded">
+                        <div class="reg-card">
+                    <h2>Register</h2>
+    <!--            <label>User Name</label>-->
+                <input class="form-control my-3" type="text" placeholder="UserName" />
+
+                    <div id="mail">
+    <!--                <label>E-mail Address</label>-->
+                <input class="form-control my-3" type="email" placeholder="Name@example.com"/>
+                    <div class=" mt-2 alert alert-danger">worng mail</div>
+                    </div>
+    <!--             <label>Password</label>  -->
+                <input class="form-control my-3" type="password" placeholder="Password"/>
+    <!--                <label>Re-Password</label>-->
+                <input class="form-control my-3" type="password" placeholder="Confirm Password"/>
+                 <button class="btn">Sign Up</button>   
+                <div class="loginLink pt-5 text-secondary">If you have account : <a>Click Here </a></div>
+</div>
+                        <div class="login-card">
+               <h2>Log In</h2> 
+<!--                <label>User Name</label>-->
+                <input class="form-control" placeholder="UserName"/>
+<!--                <label>Passwprd</label>-->
+                 <input class="form-control my-3" placeholder="Password" type="password"/>
+                <label class="form-check-label check">
+                  <input class="form-check-input" type="checkbox"><span class="pl-4"> Keep Me Login</span>
+                </label>
+             <div><button class="btn btn-two mt-2">LogIn</button> </div> 
+ 
+                </div>
+                    </div>
+                    <span class="light-close">
+                        <i class="fas fa-window-close"></i>
+                    </span>
+                </div>
+            
+            </div>
+        
+        </div>
+    
+        
+        <script src="js/jquery-3.3.1.min.js"></script> 
+        <script src="js/popper.min.js"></script>        
+        <script src="js/bootstrap.min.js"></script> 
+        <script src="js/savedImages.js"></script>
+        <script src="js/popup.js"></script>
+    
+
+</body>
+
 </html>

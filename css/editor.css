@@ -1,8 +1,10 @@
-
+*{
+     transition: all 0.4s !important;
+}
 body{
     font-family: 'Lato', sans-serif;
-/*    letter-spacing: 1px;*/
     overflow-x: hidden;
+   
 }
 .logOut{
     border:1px solid #ea0647;
@@ -47,7 +49,7 @@ a {
     color: #ea0647;
     cursor: pointer;
 }
-.editor button{
+.editor .bgOptionsArea button{
     background-color: #ea0647;
     color: #fff;
     border-radius: 8px;
@@ -55,8 +57,19 @@ a {
     border-style:none;
     cursor: pointer;
 }
+.editor .save_download button{
+    color: #ea0647;
+    border: solid 1px #ea0647;
+ 
+}
+.editor .save_download button:hover  {
+    background-color: #ea0647;
+    color: white;
+    border: none;   
+}
 .menues{
     background-color:#fff;
+    
 }
 .menueList{
     background-color: rgba(65,0,73,1);
@@ -73,7 +86,9 @@ a {
 }
 .menueOptions li{
     margin-top: 5px;
+    color:white;
 }
+
 .menueOptions li:hover{
     cursor: pointer;
 }
@@ -88,8 +103,9 @@ a {
      font-weight: 600;
 }
 .menueOptions li:hover p,.menueOptions li:hover i{
-    color:#e5b7e1 !important;
+    color:#be62a6 !important;
 }
+
 .options
 {
     background-color: rgba(65,0,73,1);
@@ -114,13 +130,22 @@ a {
 }
 /* to make div display block*/
 .cardSizeArea{
-    display: none;   
+    display: none;  
 }
 .bgColorArea{
     display: none;
 }
 .weddingArts,.birthdayArts,.motherArts,.partyArts,.watercolorArts,.floralArts,.boardersArts{
     display: none;
+     height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.save_download .alert{
+    background-color: rgba(65,0,73,.7) !important;
+}
+.save_download {
+    margin-left: 7% !important;
 }
 .bgColorArea .red{background-color: red;cursor: pointer;}
 .bgColorArea .yellow{background-color: yellow;cursor: pointer;}
@@ -138,13 +163,14 @@ a {
 
 .clipArea{
     display: none;
+    
 }
 .textCustArea{
     display: none;  
-
 }
 .bgOptionsArea{
     display: none;
+    
 }
 .uploadArea{
     display: none;
@@ -153,17 +179,69 @@ a {
     width: 25px;
     height: 25px;
 }
-
 /**** text area shimaa***/
 .textCustArea button{
     background-color: #ea0647;
     color: #fff;
     cursor: pointer;
 }
+
+#secScroll{
+    height: 370px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
 .item{
     font-size: 18px !important;
 }
 /****editTextList ****/
+
 #editTextList{
-   /* display:none;*/
+    display:none;
 }
+
+/*------------pop up----------------*/
+
+.lightbox-container
+{
+    background-color: rgba(0,0,0,0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: none;
+}
+.lightbox-holder
+{
+    position: relative;
+}
+.light-close
+{
+    position: absolute;
+    top: 130px;
+    color:#ea0647;
+    right: 30px;
+    cursor: pointer;
+}
+.login-card{
+    display: none;
+}
+.reg-card{
+     margin-top: 120px;
+    display:none;
+}
+
+.loginLink a{
+    color:#ea0647!important;
+    cursor: pointer;
+}
+
+.show
+{
+    display: block;
+}
+/*
+.rem{
+    display: none;
+}*/

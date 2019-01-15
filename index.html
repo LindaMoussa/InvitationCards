@@ -5,6 +5,8 @@
             <link rel="stylesheet" href="css/all.css"/>
             <link rel="stylesheet" href="css/skitter.css"/>
             <link rel="stylesheet" href="home.css"/>
+<!--            <link rel="stylesheet" href="editor.css"/>-->
+
             <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
             </head>
         <body>
@@ -38,9 +40,11 @@
                              <li class="nav-item">
                             <a class="nav-link " href="contact.html">Contact</a>
                           </li>
+<!--
                             <li class="nav-item">
                             <a class="nav-link " href="login.html">Login/signUp</a>
                           </li>
+-->
                             
                         </ul>
 
@@ -53,12 +57,12 @@
                 <a class="nav-link" href="#"><i class="fab fa-twitter "></i></a>
               </li>
                <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fab fa-google-plus"></i></a>
+                <a class="nav-link" href="#"><i class="fab fa-google-plus-g"></i></a>
               </li>
                  <li class="nav-item">
                 <a class="nav-link" href="#"><i class="fab fa-instagram "></i></a>
             </ul>
-              <button class="btn btn-outline-secondary   m-5 my-sm-0" type="submit">Log Out</button>
+              <button id="logBtn"class="btn btn-outline-secondary   m-5 my-sm-0" type="submit">Sign Up</button>
 
 
               </div>
@@ -66,7 +70,7 @@
                 </nav></div>
                 </section>
 
-            <section id="gallery" class="pb-5">
+            <section id="gallery" class="pb-5 mb-5">
 
 
 
@@ -112,7 +116,7 @@
 
 
 
-        <section class="navs text-center">
+        <section class="navs text-center my-5">
           <h2>Our Products</h2>
             <hr/>
             <div class="container-fluid">
@@ -344,14 +348,15 @@
 
         </section>    
 
-        <section class="about-us container text-center mt-5 pt-5">
+        <section class="about-us container text-center my-5 py-5 mx-auto">
 
-          <div class="us">  <h2>ABOUT US</h2>
+          <div class="us">  
+              <h2>ABOUT US</h2>
             <hr/></div>
-            <p>Bored of the run-of-the-mill invitations for millions of celebrations, we decided to hand over the power of design to the user, which led to the evolution of our company, NIYOTAA INNOVITATIONS - driven by the artistic mix of 'innovative + invitations' </p>
-            <p>A powerful editor and a pool of elegant layouts will let you explore the designer within yourself and create unique personalized invitations for a myriad of occasions. </p>
+            <p class="px-5 py-3">Bored of the run-of-the-mill invitations for millions of celebrations, we decided to hand over the power of design to the user, which led to the evolution of our company, INVITATION CARDS - driven by the artistic mix of 'innovative + invitations' </p>
+            <p class="px-5 ">A powerful editor and a pool of elegant layouts will let you explore the designer within yourself and create unique personalized invitations for a myriad of occasions. </p>
 
-            <p>Don't be tied down to traditional invitation design anymore. Get online, use our editor and make your card now!</p>
+            <p class="px-5">Don't be tied down to traditional invitation design anymore. Get online, use our editor and make your card now!</p>
 
 
 
@@ -386,7 +391,7 @@
                               <div class="row ">
                                   <a href="https://www.facebook.com" class="m-4 text-light"><i class="fab fa-facebook-f"></i> </a> 
                                   <a href="https://www.teitter.com" class="m-4 text-light"><i class="fab fa-twitter"></i> </a> 
-                                  <a href="https://www.google.com" class="m-4 text-light"><i class="fab fa-google-plus"></i></a>
+                                  <a href="https://www.google.com" class="m-4 text-light"><i class="fab fa-google-plus-g"></i></a>
                                   <a href="https://www.instagram.com" class="m-4 text-light"><i class="fab fa-instagram"></i> </a>                                  
                              </div>
                             </div>
@@ -395,13 +400,61 @@
 
                 </footer>   
 
+   <div class="container-fluid lightbox-container ">
+        
+            <div class="row ">
+            
+            
+                <div class="col-md-4 lightbox-holder mx-auto align-items-start">
+                
+                
+                    <div class="lightbox-item bg-light mx-auto rounded">
+                        <div class="reg-card">
+                    <h2>Register</h2>
+    <!--            <label>User Name</label>-->
+                <input class="form-control my-3" type="text" placeholder="UserName" />
 
+                    <div id="mail">
+    <!--                <label>E-mail Address</label>-->
+                <input class="form-control my-3" type="email" placeholder="Name@example.com"/>
+                    <div class="w-75 px-2 mt-2 alert alert-danger">worng mail</div>
+                    </div>
+    <!--             <label>Password</label>  -->
+                <input class="form-control my-3" type="password" placeholder="Password"/>
+    <!--                <label>Re-Password</label>-->
+                <input class="form-control my-3" type="password" placeholder="Confirm Password"/>
+                 <button class="btn">Sign Up</button>   
+                <div class="loginLink pt-5 text-secondary">If you have account : <a>Click Here </a></div>
+</div>
+                        <div class="login-card">
+               <h2>Log In</h2> 
+<!--                <label>User Name</label>-->
+                <input class="form-control" placeholder="UserName"/>
+<!--                <label>Passwprd</label>-->
+                 <input class="form-control my-3" placeholder="Password" type="password"/>
+                <label class="form-check-label check">
+                  <input class="form-check-input" type="checkbox"><span class="pl-4"> Keep Me Login</span>
+                </label>
+             <div><button class="btn btn-two mt-2">LogIn</button> </div> 
+ 
+                </div>
+                    </div>
+                    <span class="light-close">
+                        <i class="fas fa-window-close"></i>
+                    </span>
+                </div>
+            
+            </div>
+        
+        </div>
         <script src="js/jquery-3.3.1.min.js"></script> 
             <script src="js/popper.min.js"></script>        
             <script src="js/bootstrap.min.js"></script>
             <script src="js/jquery.easing.1.3.js"></script>
              <script src="js/jquery.skitter.js"></script>
             <script src="js/home.js"></script>
+                        <script src="js/popup.js"></script>
+
             </body>    
 
 

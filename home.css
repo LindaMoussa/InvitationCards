@@ -66,6 +66,7 @@ a{
 }
 .skitter .info_slide_dots .image_number.image_number_select {
     background-color: #ea0647;
+    z-index: 0;
 }
 /*footer*/
 footer span{
@@ -312,8 +313,64 @@ footer{
 }
 
 .about-us p{
-    padding: 20px 50px;
+/*    padding: 20px 50px;*/
 }
 footer {
     letter-spacing: 1px;
+}
+/*Scrollbar color*/
+body::-webkit-scrollbar {
+    width: 1em;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #ea0647;
+  outline: 1px solid grey;
+}
+
+/*------------pop up----------------*/
+
+.lightbox-container
+{
+    background-color: rgba(0,0,0,0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 44;
+    display: none;
+}
+.lightbox-holder
+{
+    position: relative;
+}
+.light-close
+{
+    position: absolute;
+    top: 130px;
+    color:#ea0647;
+    right: 30px;
+    cursor: pointer;
+}
+.login-card{
+    display: none;
+}
+.reg-card{
+     margin-top: 120px;
+    display:none;
+}
+
+.loginLink a{
+    color:#ea0647!important;
+    cursor: pointer;
+}
+
+.show
+{
+    display: block;
 }

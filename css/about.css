@@ -64,3 +64,73 @@ h4 {
 footer span{
     color:#ea0647;
 }
+/*------------*/
+
+a{
+    text-decoration: none;
+}
+le{
+clear: both;
+}
+.nevs{
+  height: 70px;
+  background-color:#fff;
+    width: 100%;
+    z-index: 55;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+   border-bottom: 1px solid rgba(0,0,0,.05);
+}
+.nevs li a{
+    color: black;
+}
+.form-inline{
+    border-left: rgba(0,0,0,0.5) 1px solid;
+}
+
+.sec1 span{
+    color:#ea0647;
+}
+
+/*------------pop up----------------*/
+
+.lightbox-container
+{
+    background-color: rgba(0,0,0,0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: none;
+}
+.lightbox-holder
+{
+    position: relative;
+}
+.light-close
+{
+    position: absolute;
+    top: 130px;
+    color:#ea0647;
+    right: 30px;
+    cursor: pointer;
+}
+.login-card{
+    display: none;
+}
+.reg-card{
+     margin-top: 120px;
+    display:none;
+}
+
+.loginLink a{
+    color:#ea0647!important;
+    cursor: pointer;
+}
+
+.show
+{
+    display: block;
+}

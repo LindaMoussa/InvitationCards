@@ -44,4 +44,4 @@ var  uesrMailReg=/^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/
     else{
       alert.style.display="none";  
     }
-})
+});

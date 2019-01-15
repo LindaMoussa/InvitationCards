@@ -7,7 +7,8 @@
         <link rel="stylesheet" href="css/all.css"/>
         
 
-        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">      
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
 
         <title>Invitation Cards</title>
 <!--        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
@@ -42,9 +43,11 @@
                              <li class="nav-item">
                             <a class="nav-link " href="contact.html">Contact</a>
                           </li>
+<!--
                             <li class="nav-item">
                             <a class="nav-link " href="login.html">Log-in/Sign-up</a>
                           </li>
+-->
                             
                         </ul>
 
@@ -57,12 +60,12 @@
                 <a class="nav-link" href="#"><i class="fab fa-twitter "></i></a>
               </li>
                <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fab fa-google-plus"></i></a>
+                <a class="nav-link" href="#"><i class="fab fa-google-plus-g"></i></a>
               </li>
                  <li class="nav-item">
                 <a class="nav-link" href="#"><i class="fab fa-instagram "></i></a>
             </ul>
-              <button class="btn btn-outline-secondary   m-5 my-sm-0" type="submit">Log Out</button>
+              <button class="btn btn-outline-secondary m-5 my-sm-0" id="logBtn"type="submit">Sign Up</button>
 
 
               </div>
@@ -73,17 +76,17 @@
         <section class="editor my-5">
             <div class="container-fluid px-0">
                 <div class="row">
-                    <div class="col-3 mt-5">
+                    <div class="col-4 mt-5">
                         <div class="menues">
                             <div class="row">
                                 <div class="menueList col-4">
                                     <ul class="menueOptions list-unstyled pt-3">
-                                        <li id="cardSizeBtn" class="text-center py-2"><i class="fa fa-columns fa-lg text-white"></i><p class="text-white mb-0 pt-1">  Card Sizes  </p></li>
-                                        <li id="bgColorBtn" class="text-center py-2"><i class="fas fa-palette text-white fa-lg"></i><p class="text-white mb-0 pt-1"> Bg Colors </p></li>
-                                        <li class="text-center py-2"><i class="fas fa-image text-white fa-lg"></i><p class="text-white mb-0 pt-1">  Bg Options  </p></li>
-                                        <li id="clipBtn" class="text-center py-2"><i class="fa fa-cubes text-white fa-lg"></i><p class="text-white mb-0 pt-1">  Clip Arts  </p></li>
-                                        <li class="text-center py-2"><i class="fa fa-font text-white fa-lg"></i><p class="text-white mb-0 pt-1"> Text </p></li>
-                                        <li class="text-center py-2"><i class="fa fa-upload text-white fa-lg"></i><p class="text-white mb-0 pt-1"> Upload </p></li>
+                                        <li id="cardSizeBtn" class="text-center py-2"><i class="fa fa-columns fa-lg"></i><p class="mb-0 pt-1">  Card Sizes  </p></li>
+                                        <li id="bgColorBtn" class="text-center py-2"><i class="fas fa-palette fa-lg"></i><p class="mb-0 pt-1"> Bg Colors </p></li>
+                                        <li class="text-center py-2"><i class="fas fa-image fa-lg"></i><p class="mb-0 pt-1">  Bg Options  </p></li>
+                                        <li id="clipBtn" class="text-center py-2"><i class="fa fa-cubes fa-lg"></i><p class="mb-0 pt-1">  Clip Arts  </p></li>
+                                        <li class="text-center py-2"><i class="fa fa-font  fa-lg"></i><p class="mb-0 pt-1"> Text </p></li>
+                                        <li class="text-center py-2"><i class="fa fa-upload fa-lg"></i><p class="mb-0 pt-1"> Upload </p></li>
                                         
                                     </ul>
                                 </div>
@@ -156,7 +159,7 @@
                                                                 <label class="form-check-label text-white pl-2" for="exampleCheck1">Top</label>
                                                             </div>
                                                         </div> 
-                                                        <div class="col-6 p-0">
+                                                        <div class="col-6 pl-4">
                                                             <div class="form-check">
                                                                 <input class="form-check-input" type="radio" name="exampleRadios" id="Radio2" value="option2">
                                                                 <label class="form-check-label text-white pl-2" for="exampleCheck1">Bottom</label>
@@ -167,6 +170,7 @@
                                                 </div>
                                             </div> 
                                             <button type="button" id="applyGrad" class="btn btn-warning my-3 rounded px-4 py-2">Apply Gradient</button>
+                                            <button type="button" id="clearGrad" class="btn btn-warning mt-1 mb-3 rounded px-4 py-2">Clear Gradient</button>
                                             
                                         </div>
                                         
@@ -175,10 +179,10 @@
                                     <div class="clipArea">
                                 
                                         <div class="row m-auto">
-                                             <div class="form-group mt-4">
+                                             <div class="form-group w-100 mt-4">
                                                 <select class="form-control pr-5 clipArtsSelector" id="exampleFormControlSelect1">
                                                   <option id="weddingOption" value="wedding">Wedding</option>
-                                                  <option value="party">Party</option>
+                                                  <option value="party">Celebrations</option>
                                                   <option value="birthday">Birthday</option>
                                                   <option value="mother">Mother's Day</option>
                                                   <option value="watercolor">Water Color</option>
@@ -189,176 +193,663 @@
 
                                             </div>
                                             <div class="weddingArts">
-                                                <div class="row">
-                                                    <div class="col-6">
-                                                        <img class="artimg img-fluid" src="images/clipArts/Asset%201.png"> 
+                                                <div class="row mr-1">
+                                                     <div class="col-6 py-1 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wdng34.png">
                                                     </div>
-                                                    <div class="col-6">
-                                                        <img class="artimg img-fluid" src="images/clipArts/Asset%202.png">
+                                                    <div class="col-6 py-1 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wdng35.png">
                                                     </div>
-                                                    <div class="col-6">
-                                                        <img class="artimg img-fluid" src="images/clipArts/Asset%203.png">
+                                                    <div class="col-6 py-1 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wdng36.png">
                                                     </div>
-                                                    <div class="col-6">
-                                                        <img class="artimg img-fluid" src="images/clipArts/Asset%204.png">
+                                                    <div class="col-6 py-1 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wdng37.png">
                                                     </div>
-                                                    <div class="col-6">
-                                                        <img class="artimg img-fluid" src="images/clipArts/vAsset%201.png">
+                                                    <div class="col-6 py-1 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wdng38.png">
                                                     </div>
-                                                    <div class="col-6">
-                                                        <img class="artimg img-fluid" src="images/clipArts/vAsset%202.png">
+                                                    <div class="col-6 py-1 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wdng40.png">
                                                     </div>
-                                                    <div class="col-6">
-                                                        <img class="artimg img-fluid" src="images/clipArts/vAsset%204.png">
+                                                    <div class="col-6 py-1 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wdng41.png">
+                                                    </div>
+                                                    <div class="col-6 py-1 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wdng42.png">
+                                                    </div>
+                                                    <div class="col-6 py-1 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wdng43.png">
+                                                    </div>
+                                                    <div class="col-6 py-1 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wdng44.png">
+                                                    </div>
+                                                    <div class="col-6 py-1 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wdng45.png">
+                                                    </div>
+                                                    <div class="col-6 py-1 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wdng46.png">
+                                                    </div>
+                                                    <div class="col-6 py-1 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wdng.png"> 
+                                                    </div>
+                                                    <div class="col-6 py-1 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wdng1.png">
+                                                    </div>
+                                                    <div class="col-6 py-1 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wdng2.png">
+                                                    </div>
+                                                    <div class="col-6 py-1 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wdng14.png">
+                                                    </div>
+                                                     <div class="col-6 py-1 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wdng10.png">
+                                                    </div>
+                                                    <div class="col-6 py-1 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wdng11.png">
+                                                    </div>
+                                                    <div class="col-6 py-1 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wdng12.png">
+                                                    </div>
+                                                    <div class="col-6 py-1 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wdng13.png">
+                                                    </div>
+                                                    
+                                                    <div class="col-6 py-1 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wdng15.png">
+                                                    </div>
+                                                    
+                                                    <div class="col-6 py-1 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wdng3.png">
+                                                    </div>
+                                                    <div class="col-6 py-1 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wdng4.png">
+                                                    </div>
+                                                    <div class="col-6 py-1 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wdng5.png">
+                                                    </div>
+                                                    <div class="col-6 py-1 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wdng6.png">
                                                     </div> 
-                                                    <div class="col-6">
-                                                        <img class="artimg img-fluid" src="images/clipArts/vAsset%206.png">
+                                                    <div class="col-6 py-1 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wdng7.png">
                                                     </div>
-                                                    <div class="col-6">
-                                                        <img class="artimg img-fluid" src="images/clipArts/vAsset%203.png">
+                                                    <div class="col-6 py-1 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wdng8.png">
                                                     </div>
-                                                    <div class="col-6">
-                                                        <img class="artimg img-fluid" src="images/clipArts/vAsset%205.png">
+                                                   
+                                                    <div class="col-6 py-1 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wdng16.png">
                                                     </div>
+                                                    <div class="col-6 py-1 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wdng17.png">
+                                                    </div>
+                                                    <div class="col-6 py-1 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wdng18.png">
+                                                    </div>
+                                                    <div class="col-6 py-1 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wdng19.png">
+                                                    </div>
+                                                    <div class="col-6 py-1 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wdng20.png">
+                                                    </div>
+                                                    <div class="col-6 py-1 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wdng21.png">
+                                                    </div>
+                                                    <div class="col-6 py-1 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wdng22.png">
+                                                    </div>
+                                                    <div class="col-6 py-1 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wdng23.png">
+                                                    </div>
+                                                    <div class="col-6 py-1 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wdng24.png">
+                                                    </div>
+                                                    <div class="col-6 py-1 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wdng25.png">
+                                                    </div>
+                                                    <div class="col-6 py-1 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wdng26.png">
+                                                    </div>
+                                                    <div class="col-6 py-1 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wdng27.png">
+                                                    </div>
+                                                    <div class="col-6 py-1 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wdng28.png">
+                                                    </div>
+                                                    <div class="col-6 py-1 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wdng29.png">
+                                                    </div>
+                                                    <div class="col-6 py-1 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wdng30.png">
+                                                    </div>
+                                                    
+                                                    <div class="col-6 py-1 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wdng32.png">
+                                                    </div>
+                                                    <div class="col-6 py-1 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wdng33.png">
+                                                    </div>
+                                                   
+                                                    <div class="col-6 py-1 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wdng39.png">
+                                                    </div>
+                                                    
+                                                    <div class="col-6 py-1 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wdng47.png">
+                                                    </div>
+                                                    
+                                                    <div class="col-6 py-1 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wdng49.png">
+                                                    </div>
+                                                    <div class="col-6 py-1 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wdng50.png">
+                                                    </div>
+                                                    <div class="col-6 py-1 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wdng51.png">
+                                                    </div>
+                                                    <div class="col-6 py-1 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wdng52.png">
+                                                    </div>
+                                                    <div class="col-6 py-1  m-auto m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wdng48.png">
+                                                    </div>
+                                                   
+                                                    
+                                                    
                                                     
                                                 </div>
                                         </div>
                                             <div class="birthdayArts">
-                                                <div class="row">
-                                                    <div class="col-6">
-                                                        <img class="artimg img-fluid" src="images/clipArts/5Asset%201.png"> 
+                                                <div class="row mr-1">
+                                                    <div class="col-6 py-1 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/bd-2.png"> 
                                                     </div>
-                                                    <div class="col-6">
-                                                        <img class="artimg img-fluid" src="images/clipArts/5Asset%202.png">
+                                                    <div class="col-6 m-auto" >
+                                                        <img class="artimg img-fluid" src="images/clipArts/bd-3.png">
                                                     </div>
-                                                    <div class="col-6">
-                                                        <img class="artimg img-fluid" src="images/clipArts/5Asset%203.png">
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/bd.png">
                                                     </div>
-                                                    <div class="col-6">
-                                                        <img class="artimg img-fluid" src="images/clipArts/3Asset%201.png">
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/bd23.png">
                                                     </div>
-                                                    <div class="col-6">
-                                                        <img class="artimg img-fluid" src="images/clipArts/3Asset%2013.png">
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/bd15.png">
                                                     </div>
-                                                    <div class="col-6">
-                                                        <img class="artimg img-fluid" src="images/clipArts/3Asset%2012.png">
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/bd16.png">
                                                     </div>
-                                                    <div class="col-6">
-                                                        <img class="artimg img-fluid" src="images/clipArts/3Asset%203.png">
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/bd17.png">
                                                     </div>
-                                                    <div class="col-6">
-                                                        <img class="artimg img-fluid" src="images/clipArts/3Asset%202.png">
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/bd18.png">
                                                     </div>
-                                                    <div class="col-6">
-                                                        <img class="artimg img-fluid" src="images/clipArts/3Asset%205.png">
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/bd25.png">
                                                     </div>
-                                                    <div class="col-6">
-                                                        <img class="artimg img-fluid" src="images/clipArts/3Asset%207.png">
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/bd27.png">
                                                     </div>
-                                                    <div class="col-6">
-                                                        <img class="artimg img-fluid" src="images/clipArts/pAsset%201.png">
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/bd29.png">
                                                     </div>
-                                                    <div class="col-6">
-                                                        <img class="artimg img-fluid" src="images/clipArts/pAsset%202.png">
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/bd28.png">
                                                     </div>
-                                                    <div class="col-6">
-                                                        <img class="artimg img-fluid" src="images/clipArts/pAsset%203.png">
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/bd26.png">
                                                     </div>
-                                                    <div class="col-6">
-                                                        <img class="artimg img-fluid" src="images/clipArts/pAsset%204.png">
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/bd30.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/bd31.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/bd32.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/bd33.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/bd34.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/bd35.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/bd36.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/bd37.png">
+                                                    </div>
+                                                    <div class="col-6  m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/bd38.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/bd39.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/bd40.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto ">
+                                                        <img class="artimg img-fluid" src="images/clipArts/bd40.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/bd41.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/bd42.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/bd43.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/bd44.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/bd45.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/bd46.png">
+                                                    </div>
+                                                    
+                                                    
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/bd1.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/bd2.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/bd4.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/bd5.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/bd6.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/bd7.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/bd8.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/bd9.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/bd10.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/bd11.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/bd12.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/bd13.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/bd14.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/bd19.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/bd20.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/bd21.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/bd22.png">
                                                     </div>
                                                     
                                                 </div>
                                         </div> 
                                             <div class="motherArts">
-                                                <div class="row">
+                                                <div class="row mr-1">
                                                     <div class="col-6 py-2">
-                                                        <img class="artimg img-fluid" src="images/clipArts/mAsset%201.png"> 
+                                                        <img class="artimg img-fluid" src="images/clipArts/mthr1.png"> 
                                                     </div>
                                                     <div class="col-6 py-2">
-                                                        <img class="artimg img-fluid" src="images/clipArts/mAsset%202.png">
+                                                        <img class="artimg img-fluid" src="images/clipArts/mthr2.png">
                                                     </div>
                                                     <div class="col-6 py-2">
-                                                        <img class="artimg img-fluid" src="images/clipArts/mAsset%203.png">
+                                                        <img class="artimg img-fluid" src="images/clipArts/mthr3.png">
                                                     </div>
                                                     <div class="col-6 py-2">
-                                                        <img class="artimg img-fluid" src="images/clipArts/mAsset%204.png">
+                                                        <img class="artimg img-fluid" src="images/clipArts/mthr4.png">
                                                     </div>
                                                     <div class="col-6 py-2">
-                                                        <img class="artimg img-fluid" src="images/clipArts/mmAsset%201.png">
+                                                        <img class="artimg img-fluid" src="images/clipArts/mthr5.png">
                                                     </div>
                                                     <div class="col-6 py-2">
-                                                        <img class="artimg img-fluid" src="images/clipArts/mmAsset%202.png">
+                                                        <img class="artimg img-fluid" src="images/clipArts/mthr6.png">
                                                     </div>
                                                     <div class="col-6 py-2">
-                                                        <img class="artimg img-fluid" src="images/clipArts/mmAsset%203.png">
+                                                        <img class="artimg img-fluid" src="images/clipArts/mthr7.png">
                                                     </div>
+                                                    <div class="col-6 py-2">
+                                                        <img class="artimg img-fluid" src="images/clipArts/mthr8.png">
+                                                    </div>
+                                                    <div class="col-6 py-2">
+                                                        <img class="artimg img-fluid" src="images/clipArts/mthr9.png">
+                                                    </div>
+                                                    <div class="col-6 py-2">
+                                                        <img class="artimg img-fluid" src="images/clipArts/mthr10.png">
+                                                    </div>
+                                                    <div class="col-6 py-2">
+                                                        <img class="artimg img-fluid" src="images/clipArts/mthr11.png">
+                                                    </div>
+                                                    <div class="col-6 py-2">
+                                                        <img class="artimg img-fluid" src="images/clipArts/mthr12.png">
+                                                    </div>
+                                                    <div class="col-6 py-2">
+                                                        <img class="artimg img-fluid" src="images/clipArts/mthr13.png">
+                                                    </div>
+                                                    <div class="col-6 py-2">
+                                                        <img class="artimg img-fluid" src="images/clipArts/mthr14.png">
+                                                    </div>
+                                                    <div class="col-6 py-2">
+                                                        <img class="artimg img-fluid" src="images/clipArts/mthr15.png">
+                                                    </div>
+                                                    <div class="col-6 py-2">
+                                                        <img class="artimg img-fluid" src="images/clipArts/mthr16.png">
+                                                    </div>
+                                                    
                                                 </div>
                                         </div>  
                                             <div class="partyArts">
-                                                <div class="row">
-                                                    <div class="col-6">
-                                                        <img class="artimg img-fluid" src="images/clipArts/5Asset%201.png"> 
+                                                <div class="row mr-1">
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/party.png"> 
                                                     </div>
-                                                    <div class="col-6">
-                                                        <img class="artimg img-fluid" src="images/clipArts/3Asset%2011.png">
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/prty40.png"> 
                                                     </div>
-                                                    <div class="col-6">
-                                                        <img class="artimg img-fluid" src="images/clipArts/5Asset%203.png">
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/prty41.png"> 
                                                     </div>
-                                                    <div class="col-6">
-                                                        <img class="artimg img-fluid" src="images/clipArts/5Asset%202.png">
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/prty13.png">
                                                     </div>
-                                                    <div class="col-6">
-                                                        <img class="artimg img-fluid" src="images/clipArts/3Asset%2010.png">
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/prty14.png">
                                                     </div>
-                                                    <div class="col-6">
-                                                        <img class="artimg img-fluid" src="images/clipArts/4Asset%209.png">
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/prty15.png">
                                                     </div>
-                                                    <div class="col-6">
-                                                        <img class="artimg img-fluid" src="images/clipArts/3Asset%208.png">
+                                                   
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/prty25.png">
                                                     </div>
+                                                   
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/prty24.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/prty27.png">
+                                                    </div>
+                                                   
+                                                    
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/prty12.png">
+                                                    </div>
+                                                   
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/prty21.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/prty22.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/prty23.png">
+                                                    </div>
+                                                    
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/prty28.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/prty26.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/prty29.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/prty30.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/prty31.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/prty33.png">
+                                                    </div> 
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/prty34.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/prty35.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/prty36.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/prty37.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/prty39.png"> 
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/prty38.png">
+                                                    </div>
+                                                     <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/prty18.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/prty19.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/prty20.png">
+                                                    </div>
+                                                     <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/prty8.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/prty9.png">
+                                                    </div>
+                                                     <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/prty6.png">
+                                                    </div>
+                                                     <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/prty1.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/prty2.png">
+                                                    </div>
+                                                   
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/prty4.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/prty10.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/prty11.png">
+                                                    </div>
+                                                    
+                                                    
                                                 </div>
                                         </div> 
+                                            <div class="watercolorArts">
+                                                <div class="row mr-1">
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wc1.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wc4.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wc3.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wc5.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wc6.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wc7.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wc8.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wc9.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wc10.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wc11.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wc12.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wc13.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wc14.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/wc15.png">
+                                                    </div>
+                                                
+                                                </div>
+                                            
+                                            </div>
                                             <div class="floralArts">
-                                                <div class="row">
+                                                <div class="row mr-1">
                                                     
-                                                    <div class="col-6">
-                                                        <img class="artimg img-fluid" src="images/clipArts/frmAsset%202-8.png">
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/flr1.png">
                                                     </div>
-                                                    <div class="col-6">
-                                                        <img class="artimg img-fluid" src="images/clipArts/flowerAsset%205-8.png">
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/flr2.png">
                                                     </div>
-                                                    <div class="col-6">
-                                                        <img class="artimg img-fluid" src="images/clipArts/flowerAsset%206-8.png">
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/flr3.png">
                                                     </div>
-                                                    <div class="col-6">
-                                                        <img class="artimg img-fluid" src="images/clipArts/flowerAsset%207-8.png">
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/flr4.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/flr5.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/flr8.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/flr7.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/flr9.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/flr10.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/flr11.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/flr13.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/flr12.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/flr14.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/flr15.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/flr16.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/flr19.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/flr17.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/flr18.png">
+                                                    </div>
+                                                    <div class="col-6 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/flr25.png">
                                                     </div>
                                                   
                                                 </div>
                                         </div> 
                                             <div class="boardersArts">
-                                                <div class="row">
+                                                <div class="row mr-1">
                                                     
-                                                    <div class="col-6 py-2">
-                                                        <img class="artimg img-fluid" src="images/clipArts/frameAsset%201-8.png">
+                                                    <div class="col-6 py-2 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/brdr1.png">
                                                     </div>
-                                                    <div class="col-6 py-2">
-                                                        <img class="artimg img-fluid" src="images/clipArts/frAsset%202-8.png">
+                                                    <div class="col-6 py-2 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/brdr2.png">
                                                     </div>
-                                                    <div class="col-6 py-2">
-                                                        <img class="artimg img-fluid" src="images/clipArts/frAsset%203-8.png">
+                                                    <div class="col-6 py-2 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/brdr3.png">
                                                     </div>
-                                                    <div class="col-6 py-2">
-                                                        <img class="artimg img-fluid" src="images/clipArts/frAsset%204-8.png">
+                                                    <div class="col-6 py-2 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/brdr4.png">
                                                     </div>
-                                                    <div class="col-6 py-2">
-                                                        <img class="artimg img-fluid" src="images/clipArts/frmAsset%201-8.png">
+                                                    
+                                                    <div class="col-6 py-2 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/brdr6.png">
                                                     </div>
-                                                    <div class="col-6 py-2">
-                                                        <img class="artimg img-fluid" src="images/clipArts/frmAsset%203-8.png">
+                                                    <div class="col-6 py-2 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/brdr7.png">
                                                     </div>
+                                                    <div class="col-6 py-2 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/brdr8.png">
+                                                    </div>
+                                                    <div class="col-6 py-2 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/brdr9.png">
+                                                    </div>
+                                                    <div class="col-6 py-2 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/brdr10.png">
+                                                    </div>
+                                                    <div class="col-6 py-2 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/brdr11.png">
+                                                    </div>
+                                                    <div class="col-6 py-2 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/brdr12.png">
+                                                    </div>
+                                            
+                                                    <div class="col-6 py-2 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/brdr16.png">
+                                                    </div>
+                                                    <div class="col-6 py-2 m-auto">
+                                                        <img class="artimg img-fluid" src="images/clipArts/brdr17.png">
+                                                    </div>
+                                                    <div class="col-6 py-2 m-auto">
+                                                        <img  class="artimg img-fluid" src="images/clipArts/brdr13.png">
+                                                    </div>
+                                                    <div class="col-6 py-2 m-auto">
+                                                        <img  class="artimg img-fluid" src="images/clipArts/brdr18.png">
+                                                    </div>
+                                                    <div class="col-6 py-2 m-auto">
+                                                        <img  class="artimg img-fluid" src="images/clipArts/brdr19.png">
+                                                    </div>
+                                                   
                                                   
                                                 </div>
                                         </div> 
@@ -379,10 +870,11 @@
                                         </div>
                                        <div id="secPage">
                                             <h5 class="text-white text-center py-3">Alter Text</h5>
-                                        <div class="row">
+                                            <div id="secScroll">
+                                                <div class="row">
                                             
                                                 <div class="col-12 text-white mt-4 mb-2">Font Family</div>
-                                                <div class="col-12 mx-2 px-0"><input class="form-control w-75" id="font" type="text" /></div>
+                                                <div class="col-12 text-center px-0"><input class="form-control w-75" id="font" type="text" /></div>
                                             </div>
                                             <div class="row">
                                             
@@ -426,59 +918,66 @@
                                                 </div>
                                         </div>
                                         <button  id="back" class="btn my-4 w-100">Back</button>
+                                            </div>
+                                        
                                        </div>
                                        
                                         
                                         </div>
-                                    </div>
-                                    
-                                    <div class="uploadArea">
-                                    <h5 class="text-white py-3">Card Sizes:(inches)</h5>
-                                    <div class="row">
+                                        <div class="uploadArea">
+                                    <h5 class="text-white py-3">Upload an Image</h5>
+                                    <div class="row pl-2">
                                       <form>
                                           <div class="form-group">
-                                            <label for="exampleFormControlFile1" class="text-white">Upload an Image</label>
+<!--                                            <label for="exampleFormControlFile1" class="text-white"></label>-->
                                             <input type="file" class="form-control-file rounded" id="imgLoader">
                                           </div>
                                         </form>
                                         </div></div>
+                                    </div>
+                                    
+                                    
                                 
                                 </div>
                             </div>
                         
                         </div>
-                    <div class="col-8">
+                    <div class="col-7">
                         <div class="row"> 
-                            <div class="col-12 py-3 ml-5 pl-5 ">
-                                <i class="fas fa-undo-alt editIcons"></i><span class="pl-1 pr-3">Undo</span>
-                                <i class="fas fa-redo-alt editIcons"></i><span class="pl-1 pr-3">Redo</span>
-                                <i class="fas fa-trash editIcons cleanEditor"></i><span class="pl-1 pr-3">Clean Editor</span>
-                            </div>
                             
                             
                             <div class="col-12">
+                            
                             <div class="row">
-                            <div class="col-8"><!--                                <div class="workSheet bg-light"></div>-->
+
+                                <div class="col-8">
+                                
+                            <div class="col-12 py-3 text-center">
+                                <i id="undo" class="fas fa-undo-alt editIcons"></i><span class="pl-1 pr-3">Undo</span>
+                                <i id="redo" class="fas fa-redo-alt editIcons"></i><span class="pl-1 pr-3">Redo</span>
+                                <i class="fas fa-trash editIcons cleanEditor"></i><span class="pl-1 pr-3">Clean Editor</span>
+                            </div>
+                                <!--<div class="workSheet bg-light"></div>-->
                                 <canvas id="c" width="528" height="384" class="workSheet mb-4" ></canvas></div>
 
-                                <div class="col-4 pr-5 pl-0">
-                                <div id="editTextList pr-5">
-                                <button id="bold"type="button" class="btn btn-light px-3 my-1" data-toggle="tooltip" data-placement="bottom" title="bold">
-                                  <i class="fa fa-bold"></i>
-                                </button>
-                                <button id="italic" type="button" class="btn btn-light px-3 my-1" data-toggle="tooltip" data-placement="bottom" title="italic">
-                                 <i class="fa fa-italic"></i>
-                                </button>
+                                <div class="col-4 text-center mt-5">
+                                <div id="editTextList" class="position-fixed">
+                                <div class="row">
+                                   <div class="col-12">
+                                   
                                 <button id="leftLine" type="button" class="btn btn-light px-3 my-1" data-toggle="tooltip" data-placement="bottom" title="align-left">
                                   <i class="fa fa-align-left"></i>
                                 </button>
-                                <button id="centerLine" type="button" class="btn btn-light px-3 my-1" data-toggle="tooltip" data-placement="bottom" title="align-center">
+                                   <button id="centerLine" type="button" class="btn btn-light px-3 my-1" data-toggle="tooltip" data-placement="bottom" title="align-center">
                                   <i class="fa fa-align-center"></i>
                                 </button>
                                                    
                                <button id="rightLine" type="button" class="btn btn-light px-3 my-1" data-toggle="tooltip" data-placement="bottom" title="align-right">
                                   <i class="fa fa-align-right"></i>
                                 </button>
+                                   </div>
+                                    <div class="col-12">
+                                
                                 <button id="underLine" type="button" class="btn btn-light px-3 my-1" data-toggle="tooltip" data-placement="bottom" title="underline">
                                  <i class="fa fa-underline"></i>
                                 </button>
@@ -488,39 +987,52 @@
                                 <button id="overLine" type="button" class="btn btn-light py-1 px-3 my-1" data-toggle="tooltip" data-placement="bottom" title="overline">
                                  O
                                 </button>
+</div>
+                               <div class="col-12">
+                                   <button id="bold"type="button" class="btn btn-light px-3 my-1" data-toggle="tooltip" data-placement="bottom" title="bold">
+                                  <i class="fa fa-bold"></i>
+                                </button>
+                                <button id="italic" type="button" class="btn btn-light px-3 my-1" data-toggle="tooltip" data-placement="bottom" title="italic">
+                                 <i class="fa fa-italic"></i>
+                                   </button></div>
+                               <!--
                                 <button id="noLine"type="button" class="btn btn-light py-1 px-3 my-1" data-toggle="tooltip" data-placement="bottom" title="remove line decoration">
                                 N
                                 </button>
-                                <!--                                            copy and past               -->
+                                
  <button id="copybtn" type="button" class="btn btn-light py-1 px-3 my1" data-toggle="tooltip" data-placement="bottom" title="Copy">
 C                              </button> 
-<!--                                               end copy-->
+-->
+                                </div>
+                                
         
                            </div></div>
                                 </div>
                             </div>
-                            <div class="col-12 pt-4 m-auto text-center">
+                            <div class="col-12 pt-4 m-auto text-center save_download">
 <!--                                <button>Preview</button>-->
-                                <button id="download">Download</button>
-                                <button>Save</button>    
+                                <button class="btn btn-outline-danger mx-1" id="save" >Save</button> 
+                                <button class="btn btn-outline-danger mr-1" id="download">Download</button>
+                                
+                                <div class="alert alert-success w-50 my-2 text-white" role="alert">Card Saved</div>   
                             </div>
                         </div>
                         
                     </div>
                     <div class="col-1 mt-5">
-                        <div class="options text-center ">
+                        <div class="options text-center position-fixed ">
                             <div class="row">
                                 <div class="col-12">
-                                   <a href="#" class="eraser"> <i class="fas fa-eraser text-white fa-lg my-3 "></i> </a>    
+                                   <a href="javascript:void(0)" class="eraser"> <i class="fas fa-eraser text-white fa-lg my-3 "></i> </a>    
                                 </div>
                                 <div class="col-12">
-                                   <a href="#" class="copy"> <i class="far fa-copy text-white fa-lg my-3"></i></a>
+                                   <a href="javascript:void(0)" class="copy"> <i class="far fa-copy text-white fa-lg my-3"></i></a>
                                 </div>
                                 <div class="col-12">
-                                   <a href="#" class="locked"> <i class="fas fa-lock text-white fa-lg my-3"></i></a>
+                                   <a href="javascript:void(0)" class="locked"> <i class="fas fa-lock text-white fa-lg my-3"></i></a>
                                 </div>    
                                 <div class="col-12">
-                                    <a href="#" class="unlocked"><i class="fas fa-lock-open text-white fa-lg my-3 mb-4"></i></a>
+                                    <a href="javascript:void(0)" class="unlocked"><i class="fas fa-lock-open text-white fa-lg my-3 mb-4"></i></a>
                                 </div>
 <!--
                                 <div class="col-12">
@@ -579,14 +1091,63 @@ C                              </button>
                     </div>
 
                 </footer>
+                 <div class="container-fluid lightbox-container ">
+        
+            <div class="row ">
+            
+            
+                <div class="col-md-4 lightbox-holder mx-auto align-items-start">
+                
+                
+                    <div class="lightbox-item bg-light mx-auto rounded">
+                        <div class="reg-card">
+                    <h2>Register</h2>
+    <!--            <label>User Name</label>-->
+                <input class="form-control my-3" type="text" placeholder="UserName" />
+
+                    <div id="mail">
+    <!--                <label>E-mail Address</label>-->
+                <input class="form-control my-3" type="email" placeholder="Name@example.com"/>
+                    <div class="w-75 px-2 mt-2 alert alert-danger">worng mail</div>
+                    </div>
+    <!--             <label>Password</label>  -->
+                <input class="form-control my-3" type="password" placeholder="Password"/>
+    <!--                <label>Re-Password</label>-->
+                <input class="form-control my-3" type="password" placeholder="Confirm Password"/>
+                 <button class="btn">Sign Up</button>   
+                <div class="loginLink pt-5 text-secondary">If you have account : <a>Click Here </a></div>
+</div>
+                        <div class="login-card">
+               <h2>Log In</h2> 
+<!--                <label>User Name</label>-->
+                <input class="form-control" placeholder="UserName"/>
+<!--                <label>Passwprd</label>-->
+                 <input class="form-control my-3" placeholder="Password" type="password"/>
+                <label class="form-check-label check">
+                  <input class="form-check-input" type="checkbox"><span class="pl-4"> Keep Me Login</span>
+                </label>
+             <div><button class="btn btn-two mt-2">LogIn</button> </div> 
+ 
+                </div>
+                    </div>
+                    <span class="light-close">
+                        <i class="fas fa-window-close"></i>
+                    </span>
+                </div>
+            
+            </div>
+        
+        </div>
         <script src="js/jquery-3.3.1.min.js"></script> 
         <script src="js/popper.min.js"></script>        
         <script src="js/bootstrap.min.js"></script> 
+
         <script src="js/editor.js"></script>
         <script src="js/fabric.min.js"></script>
         <script src="js/FileSaver.min.js"></script>
         <script src="js/jquery.fontselect.min.js"></script>
-<!--    <script src="js/scroll.js"></script>    -->
+    
+
     
       
     </body>
