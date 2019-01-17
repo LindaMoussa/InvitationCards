@@ -13,12 +13,16 @@ a{
     border-bottom-style: none;
     text-decoration-line: none;
 }
-.nevs li:hover a{
-    color: #ea0647 !important;
-}
 .profileIcon a i{
     color: white;
 }
+.profileIcon a i:hover{
+    color: #ea0647 !important;
+}
+.nevs li:hover a{
+    color: #ea0647 !important;
+}
+
 le{
    clear: both;
 }
