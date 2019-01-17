@@ -387,6 +387,7 @@ var reader = new FileReader();
   reader.readAsDataURL(e.target.files[0]);
 }    
 $("#download").click(function(){
+    canvas.deactivateAll().renderAll();
     $("#c").get(0).toBlob(function(blob){
 //        console.log(blob)
         0.99
