@@ -3,9 +3,7 @@
     
     font-family: 'Lato', sans-serif;
 }
-.profileIcon a i{
-    color: white;
-}
+
 #homePage{
     overflow-x:hidden ; 
     
@@ -17,6 +15,9 @@ a{
 }
 .nevs li:hover a{
     color: #ea0647 !important;
+}
+.profileIcon a i{
+    color: white;
 }
 le{
    clear: both;
