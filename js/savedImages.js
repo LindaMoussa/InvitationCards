@@ -46,12 +46,18 @@ $("#editBtnName").click(function(){
     $("#doneBtnName").click(function(){
           
     var name = $('#editUserName').val();
-    $('#name').html(name);
-    $("#editUserName").css("display","none");
-    $("#name").css("display","block");
-    $("#editBtnName").css("display","block");
-    $("#doneBtnName").css("display","none");
-    localStorage.setItem('UserName', name);
+    if (name.length < 0)
+    {
+        $('#name').html(name);
+        $("#editUserName").css("display","none");
+        $("#name").css("display","block");
+        $("#editBtnName").css("display","block");
+        $("#doneBtnName").css("display","none");
+        localStorage.setItem('UserName', name);
+    }
+    else{
+        alert("Please enter your name")
+        }
     })
  
 });
@@ -65,13 +71,19 @@ $("#editBtnEmail").click(function(){
     $("#doneBtnEmail").click(function(){
           
     var email = $('#editUserEmail').val();
-    console.log(email)
-    $('#email').html(email);
-    $("#editUserEmail").css("display","none");
-    $("#email").css("display","block");
-    $("#editBtnEmail").css("display","block");
-    $("#doneBtnEmail").css("display","none");
-    localStorage.setItem('UserEmail', email);   
+    if (email.length < 0)
+    {   
+        console.log(email)
+        $('#email').html(email);
+        $("#editUserEmail").css("display","none");
+        $("#email").css("display","block");
+        $("#editBtnEmail").css("display","block");
+        $("#doneBtnEmail").css("display","none");
+        localStorage.setItem('UserEmail', email);  
+    }
+    else{
+        alert("Please enter your email")
+        }
     })
  
 });
@@ -85,13 +97,20 @@ $("#editBtnBio").click(function(){
     $("#doneBtnBio").click(function(){
           
     var bio = $('#editUserBio').val();
-    console.log(bio)
-    $('#bio').html(bio);
-    $("#editUserBio").css("display","none");
-    $("#bio").css("display","block");
-    $("#editBtnBio").css("display","block");
-    $("#doneBtnBio").css("display","none");
-     localStorage.setItem('UserBio', bio);   
+    if(bio.length >0)
+    { 
+        console.log(bio)
+        $('#bio').html(bio);
+        $("#editUserBio").css("display","none");
+        $("#bio").css("display","block");
+        $("#editBtnBio").css("display","block");
+        $("#doneBtnBio").css("display","none");
+         localStorage.setItem('UserBio', bio);   
+    }
+    else
+    {
+        alert("Please enter your bio")
+    }
     })
  
 });
