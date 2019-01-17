@@ -21,11 +21,9 @@
                       <div class="collapse navbar-collapse " id="navbarSupportedContent">
                         <ul class="navbar-nav m-auto ">
                           <li class="nav-item active">
-                            <a class="nav-link" href="index.html"> <span >Home</span></a>
+                            <a class="nav-link" href="index.html">Home</a>
                           </li>
-                          <li class="nav-item">
-                            <a class="nav-link " href="profile2.html">Profile</a>
-                          </li>
+                      
                            <li class="nav-item">
                             <a class="nav-link " href="editor.html">Editor</a>
                           </li>
@@ -35,13 +33,11 @@
                              <li class="nav-item">
                             <a class="nav-link " href="contact.html">Contact</a>
                           </li>
-<!--
-                            <li class="nav-item">
-                            <a class="nav-link " href="login.html">Login/signUp</a>
-                          </li>
--->
                             
                         </ul>
+                          <div class="profileIcon">
+                             <a class="nav-link " href="profile2.html"><i class="far fa-user fa-lg"></i> </a>
+                          </div>
 
             <div class="form-inline my-2 my-lg-0">
               <ul class="navbar-nav mr-auto">
@@ -66,29 +62,48 @@
         </section>
          
         <div class="container my-5 profile-sec ">
-        <div class="row">
+        <div class="row ">
             <div class="profile col-md-3 mt-5">
-                <img class="img-fluid  rounded-circle" src="images/profile/testimonial-2.jpg" alt="person">
+                <img class="img-fluid w-100  rounded-circle position-relative" src="images/profile/default.jpeg" alt="person">
+                <div class="layer rounded-circle position-absolute"><button id="changeProfile" class="btn text-white btn-outline-danger position-absolute">Change Profile Picture</button>
+                <input id="imgUpload"type="file">    
+                
+                </div>
             </div>
             <div class="profileInfo col-md-9 pt-5 pl-5">
                 <div class="col-12  pl-5">
                 <div class="row ">
-                    <div class="col-6 "><h2 id="name">Ahmed Mohammed</h2></div>
+                    <div class="col-6 username ">
+                        <h2 id="name">Ahmed Mohammed</h2>
+                        <input type="text" class="form-control" id="editUserName" placeholder="User Name">
+                    
+                    </div>
                     <div class="col-6  mt-2">
-                        <a  id="editOne" class=" px-3 py-2 remBtn">edit</a>
+                        <a  id="editBtnName" class=" px-3 py-2 remBtn">Edit</a>
+                         <a  id="doneBtnName" class=" px-2 py-2 editBtn">Done</a>
                     </div>
                 </div>
                 </div>
                 <div class="col-12 pl-5 mt-4">
                 <div class="row">
-                    <div class="col-6"><h4 id="email">Ahmed_Mohammed@gmail.com</h4></div>
-                    <div class="col-6"><a class="py-2 px-3 remBtn">edit</a></div>
+                    <div class="col-6 useremail">
+                        <h4 id="email">Ahmed_Mohammed@gmail.com</h4>
+                        <input type="email" class="form-control" id="editUserEmail" placeholder="Email">
+
+                    </div>
+                    <div class="col-6"><a id="editBtnEmail" class="py-2 px-3 remBtn">Edit</a>
+                        <a  id="doneBtnEmail" class=" px-2 py-2 editBtn">Done</a>
+                    </div>
                 </div>
                 </div>
                 <div class="col-12 pl-5 my-4">
                      <div class="row">
-                    <div class="col-6"><p id="bio">A paragraph is a self-contained unit of a discourse in writing dealing with a particular point or idea</p></div>
-                    <div class="col-6"><a class="py-2 px-3 remBtn">edit</a></div>
+                    <div class="col-6 userbio">
+                     <p id="bio">A paragraph is a self-contained unit of a discourse in writing dealing with a particular point or idea</p>
+                    <textarea class="form-control" id="editUserBio" rows="3" placeholder="Bio"></textarea>
+                    </div>
+                    <div class="col-6"><a  id="editBtnBio"class="py-2 px-3 remBtn">edit</a>
+                        <a  id="doneBtnBio" class=" px-2 py-2 editBtn">Done</a></div>
                 </div>
                 </div>
              

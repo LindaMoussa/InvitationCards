@@ -1,11 +1,14 @@
 *{
     
-    transition: all 2s;
+    
     font-family: 'Lato', sans-serif;
 }
-
-body{
-    overflow-x:hidden ;    
+.profileIcon a i{
+    color: white;
+}
+#homePage{
+    overflow-x:hidden ; 
+    
 }
 a{
     text-decoration: none;
@@ -23,6 +26,7 @@ nav .navbar{
 }
 .nevs{
     height: 70px;
+    transition: all 2s !important;
     background-color:rgba(0,0,0,.1);
     width: 100%;
     z-index: 55;
@@ -149,9 +153,12 @@ footer{
     margin-top: 200px;
 }
 
-.navs h2{
+.navs h2 ,a{
     color: #ea0647;
     
+}
+.profileIcon a:hover{
+    color:  #ea0647;
 }
 .navs hr{
     border-top: 1px solid ;
@@ -288,6 +295,7 @@ footer{
     text-align: center;
     background-color: rgba(234,6,71,0.5);
    opacity: 0;
+    transition: all 2s !important;
     
 }
 .imges:hover .post {

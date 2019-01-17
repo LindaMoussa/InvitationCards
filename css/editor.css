@@ -1,5 +1,4 @@
 *{
-     transition: all 0.4s !important;
 }
 body{
     font-family: 'Lato', sans-serif;
@@ -37,6 +36,9 @@ body{
 a {
     color: #ea0647;
 }
+.profileIcon a i{
+    color: black;
+}
 .workSheet{
     -moz-box-shadow: 0 0 25px #999;
     -webkit-box-shadow: 0 0 25px #999;
@@ -57,6 +59,12 @@ a {
     border-style:none;
     cursor: pointer;
 }
+.textOptions button{
+    background-color: #ea0647;
+    color: #fff;
+    transition:all 0s !important;
+}
+
 .editor .save_download button{
     color: #ea0647;
     border: solid 1px #ea0647;
@@ -69,7 +77,7 @@ a {
 }
 .menues{
     background-color:#fff;
-    
+
 }
 .menueList{
     background-color: rgba(65,0,73,1);
@@ -77,6 +85,8 @@ a {
 }
 .optionList{
     background-color:#fff;
+         transition: all 2s !important;
+
 }
 .menueOptions{
     list-style: none;
@@ -163,17 +173,20 @@ a {
 
 .clipArea{
     display: none;
-    
+
 }
 .textCustArea{
     display: none;  
+
 }
 .bgOptionsArea{
     display: none;
+
     
 }
 .uploadArea{
     display: none;
+
 }
 .bgColorArea .row div{
     width: 25px;

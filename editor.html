@@ -21,7 +21,7 @@
         <section class="sec1 position-relative mb-5" >
                 <div class="navBar position-absolute" >    
                   <nav class="navbar position-fixed navbar-expand-lg nevs py-2">
-                      <img  class="img-fluid my-5 logo " src="images/darklogo.png"  >
+                      <a href="index.html"><img  class="img-fluid my-5 logo " src="images/darklogo.png"  ></a>
                       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                       </button>
@@ -29,46 +29,45 @@
                       <div class="collapse navbar-collapse " id="navbarSupportedContent">
                         <ul class="navbar-nav m-auto ">
                           <li class="nav-item active">
-                            <a class="nav-link" href="index.html"> <span >Home</span></a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link " href="profile2.html">Profile</a>
+                            <a class="nav-link" href="index.html"> Home</a>
                           </li>
                            <li class="nav-item">
-                            <a class="nav-link " href="editor.html">Editor</a>
+                            <a class="nav-link " href="editor.html"><span >Editor</span></a>
                           </li>
                              <li class="nav-item">
                             <a class="nav-link " href="about.html">About</a>
                           </li>
                              <li class="nav-item">
-                            <a class="nav-link " href="contact.html">Contact</a>
+                            <a class="nav-link contact " href="contact.html">Contact</a>
                           </li>
 <!--
                             <li class="nav-item">
                             <a class="nav-link " href="login.html">Log-in/Sign-up</a>
                           </li>
--->
-                            
+-->                        
                         </ul>
+                          <div class="profileIcon">
+                            <a class="nav-link " href="profile2.html"><i class="far fa-user fa-lg"></i> </a>
+                          </div>
 
-            <div class="form-inline my-2 my-lg-0">
-              <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#"><i class="fab fa-facebook-f  pl-2"></i></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fab fa-twitter "></i></a>
-              </li>
-               <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fab fa-google-plus-g"></i></a>
-              </li>
-                 <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fab fa-instagram "></i></a>
-            </ul>
-              <button class="btn btn-outline-secondary m-5 my-sm-0" id="logBtn"type="submit">Sign Up</button>
+                        <div class="form-inline my-2 my-lg-0">
+                          <ul class="navbar-nav mr-auto">
+                          <li class="nav-item active">
+                            <a class="nav-link" href="#"><i class="fab fa-facebook-f  pl-2"></i></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fab fa-twitter "></i></a>
+                          </li>
+                           <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fab fa-google-plus-g"></i></a>
+                          </li>
+                             <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fab fa-instagram "></i></a>
+                        </ul>
+                          <button class="btn btn-outline-secondary m-5 my-sm-0" id="logBtn"type="submit">Sign Up</button>
 
 
-              </div>
+                          </div>
           </div>
                 </nav></div>
                 </section>
@@ -962,7 +961,7 @@
 
                                 <div class="col-4 text-center mt-5">
                                 <div id="editTextList" class="position-fixed">
-                                <div class="row">
+                                <div class="row textOptions">
                                    <div class="col-12">
                                    
                                 <button id="leftLine" type="button" class="btn btn-light px-3 my-1" data-toggle="tooltip" data-placement="bottom" title="align-left">
@@ -1023,16 +1022,16 @@ C                              </button>
                         <div class="options text-center position-fixed ">
                             <div class="row">
                                 <div class="col-12">
-                                   <a href="javascript:void(0)" class="eraser"> <i class="fas fa-eraser text-white fa-lg my-3 "></i> </a>    
+                                   <a href="javascript:void(0)" class="eraser" data-toggle="tooltip" data-placement="bottom" title="Eraser"> <i class="fas fa-eraser text-white fa-lg my-3 "></i> </a>    
                                 </div>
                                 <div class="col-12">
-                                   <a href="javascript:void(0)" class="copy"> <i class="far fa-copy text-white fa-lg my-3"></i></a>
+                                   <a href="javascript:void(0)" class="copy" data-toggle="tooltip" data-placement="bottom" title="Copy"> <i class="far fa-copy text-white fa-lg my-3"></i></a>
                                 </div>
                                 <div class="col-12">
-                                   <a href="javascript:void(0)" class="locked"> <i class="fas fa-lock text-white fa-lg my-3"></i></a>
+                                   <a href="javascript:void(0)" class="locked" data-toggle="tooltip" data-placement="bottom" title="Lock Layer"> <i class="fas fa-lock text-white fa-lg my-3"></i></a>
                                 </div>    
                                 <div class="col-12">
-                                    <a href="javascript:void(0)" class="unlocked"><i class="fas fa-lock-open text-white fa-lg my-3 mb-4"></i></a>
+                                    <a href="javascript:void(0)" class="unlocked" data-toggle="tooltip" data-placement="bottom" title="Un-lock Layer"><i class="fas fa-lock-open text-white fa-lg my-3 mb-4"></i></a>
                                 </div>
 <!--
                                 <div class="col-12">

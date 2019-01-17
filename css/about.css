@@ -3,6 +3,7 @@
 *
 {
     box-sizing: border-box;
+     transition: all 0s !important;
 }
 #about{
     margin-top: 8%!important;
@@ -20,6 +21,10 @@ a{
     text-decoration: none;
     border-bottom-style: none;
     text-decoration-line: none;
+    color: #ea0647;
+}
+.profileIcon a i{
+    color: black;
 }
 .nevs li:hover a{
     color: #ea0647 !important;

@@ -1,7 +1,10 @@
-
+*{
+     transition: all 0s !important;
+}
 body{
     font-family: 'Lato', sans-serif;
     letter-spacing: 1px;
+    transition: all 0s !important;
     overflow-x: hidden;
 }
 .logOut{
@@ -33,18 +36,42 @@ body{
 a {
     color: #ea0647;
     cursor: pointer;
-
+}
+.profileIcon a i{
+    color: #ea0647 !important;
 }
 .row h4{
     color: black;
 }
-.remBtn{
+.remBtn,.editBtn{
     color:gray!important;
-/*    border:1px solid #ccc !important;*/
-        
+/*    border:1px solid #ccc !important;*/       
 }
-.remBtn:hover{
+.remBtn,.editBtn{
     color:#ea0647 !important;
-    border:1px solid #ea0647 !important;
-
+/*    border:1px solid #ea0647 !important;*/
+}
+.layer{ 
+    top: 0;
+    width: 90%;
+    height:100%;   
+    background-color: rgba(0,0,0,0.3);
+    opacity: 0;
+}
+.profile button{
+    left:15%;
+    top:55%;
+}
+.profile:hover .layer{
+    opacity: 1;
+    transition: all 1s;
+}
+#imgUpload{
+    display: none;
+}
+#editUserName,#editUserEmail,#editUserBio{
+    display: none;
+}
+.editBtn{
+    display: none;
 }
