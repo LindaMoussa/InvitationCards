@@ -46,7 +46,7 @@ $("#editBtnName").click(function(){
     $("#doneBtnName").click(function(){
           
     var name = $('#editUserName').val();
-    if (name.length < 0)
+    if (name.length > 0)
     {
         $('#name').html(name);
         $("#editUserName").css("display","none");
@@ -71,7 +71,7 @@ $("#editBtnEmail").click(function(){
     $("#doneBtnEmail").click(function(){
           
     var email = $('#editUserEmail').val();
-    if (email.length < 0)
+    if (email.length > 0)
     {   
         console.log(email)
         $('#email').html(email);
