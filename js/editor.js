@@ -390,10 +390,9 @@ $("#download").click(function(){
     canvas.deactivateAll().renderAll();
     $("#c").get(0).toBlob(function(blob){
 //        console.log(blob)
-        0.99
         blob.crossOrigin="Anonymous";
         saveAs(blob,"InvitationCard.jpg");
-    });
+    },1.0);
 });
 $("#save").click(function(){
 //        image=canvas.toSVG();
