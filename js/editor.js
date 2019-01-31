@@ -358,15 +358,19 @@ $('.unlocked').click(function(){
     img.lockMovementY=false;
     
 });
-//$('.forward').click(function(){
-//    var img=canvas.getActiveObject();
-//    console.log(canvas.getActiveObject())
-//    canvas.bringForward(img);
-//    
-//})
-//$('.backward').click(function(){
-//    canvas.bringToFront(canvas.getActiveObject());
-//})
+$('.forward').click(function(){
+   var myObject = canvas.getActiveObject();
+  canvas.bringForward(myObject);
+  canvas.discardActiveObject();
+  canvas.renderAll(); 
+    
+});
+$('.backward').click(function(){
+    var myObject = canvas.getActiveObject();
+    canvas.sendBackwards(myObject);
+    canvas.discardActiveObject();
+    canvas.renderAll(); 
+});
 document.getElementById('imgLoader').onchange = function handleImage(e) {
 var reader = new FileReader();
   reader.onload = function (event){
