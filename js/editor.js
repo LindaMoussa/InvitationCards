@@ -201,9 +201,10 @@ $(".lightblue").click(function(){
     canvas.backgroundColor="lightblue";
     canvas.renderAll();
 });         
-$('.colorPicker').on('input', function() {        canvas.backgroundColor=$(".colorPicker").val();
+$('.colorPicker').on('input', function() {        
+    canvas.backgroundColor=$(".colorPicker").val();
     canvas.renderAll(); 
-                                         } ) ;   
+   } ) ;   
     
 $('#clearBackground').click(function(){
     canvas.setBackgroundColor(null, canvas.renderAll.bind(canvas));
@@ -215,6 +216,7 @@ $('.transparentRange').on('input',function(){
     console.log("canvasOpacity"+canvas.opacity);
 }); 
 $('#applyGrad').click(function(){
+    canvas.remove(rect);
     rect.set('width', canvas.getWidth());
     rect.set('height', canvas.getHeight());
    
